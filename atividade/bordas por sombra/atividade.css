@@ -1,0 +1,16 @@
+body{
+    background-color: aqua;
+}
+
+
+.teste{
+    height: 200px;
+    width: 550px;
+    background-color: whitesmoke;
+    margin: 20%;
+    box-shadow: 0 0 0 4px black,
+                0 0 0 8px aqua,
+                0 0 0 12px black,
+                0 0 0 16px aqua,
+                0 0 0 20px black;
+}

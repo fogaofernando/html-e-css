@@ -1,6 +1,7 @@
 .foto-home {
     height: 200px;
     border-radius: 100px;
+    box-shadow: 0 0 1em #000;        
 }
 .saudacao p {
     font-size: 1.5em;
@@ -36,6 +37,8 @@
     margin: 2em auto;
     display: block;
     text-align: center;
+    
+    box-shadow: 0 0 1.2em #000 , inset 0 0 .5em #FFF;
 }
 .secao-inicio {
     padding: 2em;
@@ -156,13 +159,16 @@ main {
 .javascript {
     top: 35%;
     left: 60%;
+    opacity: .5;    
     transform: translate(-50%, -50%) rotate(-5deg) translateZ(1px) scale(0.25);
+    
 }
 
 .acessibilidade {
     top: 42%;
     left: 44%;
     transform: translate(-50%, -50%) rotate(-20deg) translateZ(3px) scale(0.25);
+    opacity: .8;
 }
 
 .responsivo {
