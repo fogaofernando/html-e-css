@@ -54,7 +54,7 @@ table{
 td, th {
 	padding: .7em;
 	margin: 0;
-	border: 1px solid #ccc;
+	border: 0.5em solid #ccc;
 	text-align: left;
 }
 
