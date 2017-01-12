@@ -1,0 +1,54 @@
+	/*Metas*/
+h1{
+	background-color:#445566;
+	color:#EEEEEE;
+	
+}
+
+h2{
+	text-indent:50px;
+	background-color: #5599dd;
+	color:dddddd;
+}
+
+body{
+	/*font-family:Monotype Corsiva;*/
+	background-color:#E0FFFF;
+	width:auto;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+li{
+	text-indent:10px;
+}
+	/*Classes*/
+.esp{
+	/*text-indent:50px;*/
+	text-align:center;
+}
+
+.tec{
+	text-decoration:underline;
+	font-style:italic; 
+	color:5555Fd;
+}
+
+
+	/*IDS*/
+#email{
+	text-decoration:underline;
+	font-style:italic;
+}
+
+#cabecalhoP{
+	text-align:center;
+	background-color: #000080;
+	background-position: right;
+	
+	padding-left:5px;
+	padding-top:50px;
+	padding-right:5px;
+	padding-bottom:50px;
+	
+}

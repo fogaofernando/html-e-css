@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+	
+	<!--Configurtações da página-->
+	<head>
+		
+	</head>
+	
+	<!--Elementos da página-->
+	<body>
+		<script>
+			//Objetivo: Substituir strings encontradas pelas espressoes regulares através do método replace
+			//Ação: Troca do ' - ' pelo ' /' na data
+
+			var data = '2017-01-12';
+			var esp = /-/g;
+			
+			data = data.replace(esp,'/');
+			console.log(data);
+
+		</script>
+	</body>
+</html>

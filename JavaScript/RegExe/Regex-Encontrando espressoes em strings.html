@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+	
+	<!--Configurtações da página-->
+	<head>
+		
+	</head>
+	
+	<!--Elementos da página-->
+	<body>
+		<script>
+			var alvo = "meu nome é Fernando Jorge, tenho 18 anos, nasci em 18 de março de 1997";
+			var exp = /[A-Z]\w+/g;
+			var result = [];
+			var cont = 0;
+			var temp = null;
+			while(temp = exp.exec(alvo)){
+				result[cont] = temp;
+				console.log(temp);
+				cont++;		
+			}
+
+		</script>
+	</body>
+</html>

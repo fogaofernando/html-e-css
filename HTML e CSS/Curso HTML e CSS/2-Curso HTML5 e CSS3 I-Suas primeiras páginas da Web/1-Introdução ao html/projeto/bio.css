@@ -1,0 +1,202 @@
+/*tags*/
+body{
+    background-color: azure;                            /*Cor de fundo*/
+    font-family: inherit;                                /*Fonte do texto*/
+
+    /*font-size: 20px;*/ 
+}
+
+
+main{
+    margin-bottom: 20px;
+    padding-bottom: 80px;
+    width: 80%;
+    float: left;
+}
+
+
+/*aside,img{
+    width: 20%;
+    float: right;
+}*/
+
+
+main h1{      
+    width: 100%;
+    font-size: 60px;                                    /*Tamanho da fonte*/
+    text-transform: uppercase;                          /*Para deixar o texto com letra maiúscula*/
+    
+    background-color:#881331;
+    color:#FAFFFA;                                      /*Cor do texto*/
+    font-family: "Arial",sans-serif;
+    
+    text-align: center;                                 /*Tipo de alinhamento do texto, no caso central*/
+    padding: 40px;                                     /*controla os espaços internos do elemento*/
+    margin-bottom: 35px;                                /*controla os espaços externos do elemento, no caso de baixo*/
+    border-bottom: 12px solid black;
+    
+}
+
+
+main p{
+    line-height: 22px;                                  /*espaçamento entre linhas*/
+    font-size: 18px;
+    text-align: justify;
+    margin: 20px 0;
+}
+
+
+h2{
+    clear: both;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: sans-serif;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+cite{
+  
+    /*text-decoration-style: dashed;*/
+    font-style: italic;
+    padding: 8px;
+}
+
+
+blockquote {
+    line-height: 30px; 
+    font-size: 18px;
+    background-color: #D3DDDA;
+    padding: 20px 16px;
+    margin:  30px;
+    margin-top: 0;
+    border: 10px solid #C2CCCA;                      /*Criar borda: tamanho, tipo e cor*/
+    width: 290px;
+    /*box-sizing: border-box;                       /*Define o objeto todo no navegador, e não só o conteudo interno*/
+}
+
+
+nav h1{
+    font-size: 23px;
+    padding-top: 0px;
+    color:aliceblue;
+}
+
+nav ul{
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
+
+nav ul li a{
+    color: white;
+}
+
+
+aside{
+    position:absolute;
+    right: 0;
+    top: 310px;
+    float: left;
+    width: 15%;
+    clear: right;                                   /*Não aceita espaçamento a esquerda*/
+    background-color:#40114c;
+    
+    text-align: center;
+    font-size: 19px;
+    font-family: "Open Sans Condensed",serif;
+    
+    padding:20px;
+    border: 10px solid black;
+    box-sizing: border-box;                         /*Mantem todos os objetos do campo da mesma largura da borda*/
+}
+
+
+aside ul li{
+    display: inline-block;
+} 
+
+aside nav ul li{
+    display: block;
+}
+
+
+img{
+    clear: right;
+    border: 10px solid black;
+    width: 300px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/*IDs*/
+
+#imgCanto{
+    /*width: 20%;*/
+    float: right;
+   /* box-sizing: border-box;*/
+}
+
+
+#rodaPe{
+    position:fixed;         /*O objeto irá acompanhar a movimentação da página*/
+    width: 100%;
+    left: 0;
+    bottom:0;
+    clear: both;
+    background-color:black;
+    padding: 12px;
+    padding-left: 20px;
+    color: aliceblue;
+}
+
+#Centralizar{
+    width:940px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+/*Classes*/
+
+.incones-sociais{
+    background-color:#40114c;
+}
+
+.icones-sociais a{
+    height: 40px;
+    width: 40px;
+    text-indent: -9999px;
+    display: inline-block;                                   /*Block para empilhar, inline(nao tem tamanho regulavel: pega o tamanho errado dos objetos) para alinhar e                                                                             inlineblock(trabalahr normalmente com o tamanho dos objetos e aceita height, entre outras funções ) tambem para alinhar */ 
+}
+
+.github{
+    background-image: url(github.png);
+
+}
+
+
+.linkedin{
+    background-image: url(linkedin.png);
+}
+
+
+.twitter{
+    background-image: url(twitter.png);
+     text-align: center;
+}
+
+
+.petro{
+    float:left;
+    
+}
+  
+.fiat{
+    float:right;
+    
+}
+
+.clearfix {
+    clear: both;
+} /*limpar a sequencia de floats*/

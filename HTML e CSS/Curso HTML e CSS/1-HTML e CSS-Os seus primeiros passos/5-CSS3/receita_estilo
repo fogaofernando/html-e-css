@@ -1,0 +1,63 @@
+/*Tags*/
+
+body{
+    background-color:#F5F0DD;
+    width:940px;
+    font-family:sans-serif;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+h2{
+    background-color:#9C8F67;/*caso não seja Chrome*/
+    
+    /*Exclusivo para Chrome*/
+    background:-webkit-linear-gradient(top,#9C8F67,#C7BE9b 30%);/*Altera tonalidade de cor*/
+    border-radius:15px;  /*arredonda bordas*/
+    border:1px solid black;
+    
+    padding-bottom:10px;
+    padding-left:5px;
+    padding-right:5px;
+    padding-top:5px;
+    color:#FEFFEF;
+    
+}
+
+figure{
+    background-color:#FFFFF7;
+    width:720px;
+    text-align: center;
+    padding: 5px;
+    font-family: cursive;
+    border: 1px solid black;
+    box-shadow: 8px 8px 3px rgba(0,0,0,0.7); /*sombra*/
+    -webkit-transform:rotate(-3deg);/*rotaoção do arquivo*/
+}
+
+/*IDs*/
+#tb-cabecalho{
+    width:40%;
+    margin-right:auto;
+    margin-left:auto;
+    border:1px solid black;
+}
+
+
+/*Hierarquia*/
+#tb-cabecalho th{
+    background-color:azure;
+}
+
+nav ul li{
+    display:inline;
+    margin-right:50px;
+}
+
+
+/*Classes*/
+
+.centralizar{
+    text-align:center;
+}
+
