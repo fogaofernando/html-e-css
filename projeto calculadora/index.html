@@ -9,16 +9,36 @@
     <body>
         <header class="topo"><h1>Calculadora</h1></header>
         <section class="container">
-            <h2>Adição</h2>
             <table>
-                <tr class="trs">
+                
+                <h2>Adição</h2>
+                <tr class="tab-topo">
                     <th>Primeiro Número</th>
+                    <th>Calculo</th>
+                    <th>Segundo Número</th>
+                    <th>Resultado</th>
+                </tr>
+                <tr class="tab-corpo">
+                    <th><input id="ad1" type="text"></th>
                     <th>+</th>
+                    <th><input id="ad2" type="text"></th>
+                    <th id="adicao"></th>
+                </tr>
+            </table>
+            <button id="botao-adicao">Calcular Resultado</button>
+            
+            <table>
+                <h2>Subtração</h2>
+                <tr class="tab-topo">
+                    <th>Primeiro Número</th>
+                    <th>Calculo</th>
                     <th>Segundo Número</th>
                     <th>Resultado</th>
                 </tr>
             </table>
+            
         </section>
-
+        
+        <script src="calculo.js"></script>
     </body>
 </html>
