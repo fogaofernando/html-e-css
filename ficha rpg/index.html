@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>RPG NARUTO</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="visual.css">
+    </head>
+      
+    <body>
+        <h1 class="titulo">RPG NARUTO</h1>
+        
+        <section class="dados-iniciais">
+            <h2>Dados Iniciais</h2>
+            <fieldset>
+                <label for="nome">Nome</label>
+                <input id="nome" type="text" name="nome" required autofocus pattern="\w{2,}" title="Somente letras A-Z de no mínimo 4 caracteres" placeholder="Seu nome" maxlength="16" size="12">
+
+                <label for="idade">Idade</label>
+                <input id="idade" class="labelNumero" type="number" placeholder="Idade">
+            </fieldset>
+
+            <fieldset>
+                <label for="aldeia">Aldeia</label>
+                <input id="aldeia" type="text" name="aldeia" required autofocus pattern="[A-Za-z]{2,}" title="Somente letras A-Z de no mínimo 4 caracteres" placeholder="Sua aldeia" maxlength="16" size="12">
+
+                <label for="tempo">Tempo</label>
+                <select id="tempo">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+            </fieldset>
+        </section>
+        
+        <h2>Atributos</h2>
+        <section class="dados-atributos-b1">
+            <fieldset>
+                <label for="ataque">ATA</label>
+                <input id="ataque" class="labelNumero" type="number" placeholder="Ataque">
+                
+                <label for="inteligencia">INT</label>
+                <input id="inteligencia" class="labelNumero" type="number" placeholder="Inteligência">        
+            </fieldset>
+            
+            <fieldset>
+                <label for="defesa">DEF</label>
+                <input id="defesa" class="labelNumero" type="number" placeholder="Defesa">
+                
+                <label for="sorte">SOR</label>
+                <input id="sorte" class="labelNumero" type="number" placeholder="Sorte">        
+            </fieldset>
+            
+            <fieldset>
+                <label for="agilidade">AGI</label>
+                <input id="agilidade" class="labelNumero" type="number" placeholder="Agilidade">
+                
+                <label for="mira">MIRA</label>
+                <input id="mira" class="labelNumero" type="number" placeholder="Mira">        
+            </fieldset>
+            
+            <fieldset>
+                <label for="força">FOR</label>
+                <input id="força" class="labelNumero" type="number" placeholder="Força">
+                
+                <label for="velocidade">VEL</label>
+                <input id="velocidade" class="labelNumero" type="number" placeholder="Velocidade">        
+            </fieldset>
+            
+            <fieldset>
+                <label for="desvio">DES</label>
+                <input id="desvio" class="labelNumero" type="number" placeholder="Desvio">
+                
+                <label for="resistencia">RES</label>
+                <input id="resistencia" class="labelNumero" type="number" placeholder="Resistência">        
+            </fieldset> 
+             
+            <fieldset>
+                <label for="percepção">PER</label>
+                <input id="percepção" class="labelNumero" type="number" placeholder="Percepção">
+                
+                <label for="sabedoria">SAB</label>
+                <input id="sabedoria" class="labelNumero" type="number" placeholder="Sabedoria">        
+            </fieldset> 
+        </section>
+        
+        <section class="dados-atributos-b2">
+            <fieldset>
+                <label for="hp">HP</label>
+                <input id="hp" class="labelNumero" type="number" placeholder="HP"> 
+                <input id="max-hp" class="labelNumero" type="number" placeholder="Max HP"> 
+            </fieldset>
+            
+            <fieldset>
+                <label for="chacara">CHA</label>
+                <input id="chacara" class="labelNumero" type="number" placeholder="Chacara"> 
+                <input id="max-chacara" class="labelNumero" type="number" placeholder="Max Chacara"> 
+            </fieldset>
+            
+             <fieldset>
+                <label for="level">LV</label>
+                <input id="level" class="labelNumero" type="number" placeholder="Level" required autofocus pattern="\d{1,2}"> 
+            </fieldset>
+            
+            <fieldset>
+                <label for="xp">XP</label>
+                <input id="xp" class="labelNumero" type="number" placeholder="Experiência"> 
+                <input id="max-xp" class="labelNumero" type="number" placeholder="Max Experiência"> 
+            </fieldset>
+            
+            <fieldset>
+                <label for="classe">Classe</label>
+                <select>
+                    <option value="genin">Genin</option>
+                    <option value="chuunin">Chuunin</option>
+                    <option value="jounin">Jounin</option>
+                    <option value="ambu">Ambu</option>
+                    <option value="kage">kage</option>
+                    <option value="nukenin">Nukenin</option>
+                </select>
+            </fieldset>
+            
+            <fieldset>
+                <label for="carisma">Carisma</label>
+                <select>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </fieldset>
+        </section>
+        
+        <section class="dados-atributos-b3">
+            <fieldset>
+                <label for="cla">Clã</label>
+                <input id="cla" type="text" required autofocus pattern="\w{2,}" placeholder="Clã">
+            </fieldset>
+            
+            <fieldset>
+                <label for="elemento">Elemento</label>
+                <input id="elemento" type="text" required autofocus pattern="\w{2,}"  placeholder="Elemento">
+            </fieldset>
+            
+            <fieldset>
+                <label for="ninjutsu">Ninjutsu</label>
+                <input id="ninjutsu" class="labelNumero" type="number"  placeholder="Ninjutsu">
+            </fieldset>
+            
+            <fieldset>
+                <label for="taijutsu">Taijutsu</label>
+                <input id="taijutsu" class="labelNumero" type="number"  placeholder="Taijutsu">
+            </fieldset>
+            
+            <fieldset>
+                <label for="genjutsu">Genjutsu</label>
+                <input id="genjutsu" class="labelNumero" type="number"  placeholder="Genjutsu">
+            </fieldset>
+            
+            
+        </section>
+        
+        <section class="dados-mochila">
+            <fieldset>
+                
+                <h2>Mochila</h2>
+                <label for="peso">Peso</label><input id="peso" class="labelNumero" type="number" placeholder="Peso">
+                <label for="ryo">RYO</label><input id="ryo" class="labelNumero" type="number" placeholder="Dinheiro em moedas ninjas">
+                
+                <table>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Informações do objeto</th>
+                        <th>Peso</th>
+                        <th>Quantidade</th>
+                    </tr>
+                    <tr>
+                        <td><input id="obj-nome" type="text" placeholder="Objeto"></td>
+                        <td><input id="obj-caracteristicas"  placeholder="Caracteristicas do objeto"></td>
+                        <td><input id="obj-peso" class="labelNumero" type="number" placeholder="Peso do objeto"></td>
+                        <td><input id="obj-quantidade" class="labelNumero" type="number" placeholder="Quantidade de objetos"></td>
+                    </tr>
+                    
+                </table>
+            </fieldset>
+            
+        </section>
+        
+        <section class="dados-armas">
+            <fieldset>
+                <h2>Armas</h2>
+                <table>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Dados da arma</th>
+                        <th>Peso</th>
+                        <th>Quantidade</th>
+                    </tr>
+                    <tr>
+                        <td><input id="arma-nome" type="text" placeholder="Nome da arma"></td>
+                        <td><input id="arma-detalhes" type="text" placeholder="Detalhes da arma"></td>
+                        <td><input id="arma-peso" class="labelNumero" type="number" placeholder="Peso da arma"></td>
+                        <td><input id="arma-quantidade" class="labelNumero" type="number" placeholder="Quantidade de armas"></td>
+                    </tr>
+                    
+                </table>
+            </fieldset>
+        </section>
+    
+        <section class="dados-jutsus">
+            <fieldset>
+                <h2>Justsus</h2>
+                <table>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Informações</th>
+                        <th>Chácara</th>
+                    </tr>
+                    <tr>
+                        <td><input id="jutsu-nome" type="text" placeholder="Nome do jutsu"></td>
+                        <td><input id="jutsu-Informacoes" type="text" placeholder="Informações do jutsu"></td>
+                        <td><input id="jutsu-chacara" class="labelNumero" type="text" placeholder="Custo de chácara do jutsu"></td>
+                    </tr>
+                    
+                </table>
+            </fieldset>
+        </section>
+        
+        <section class="dados-outros">
+            <fieldset>
+                <h2>Outros</h2>
+                <ul class="lista-outros">
+                </ul>
+            </fieldset>
+        </section>
+    </body>
+    
+</html>

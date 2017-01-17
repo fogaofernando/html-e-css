@@ -1,0 +1,85 @@
+/*------------------------------------Tags*/
+body{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+h2{
+    font-size: 3.5em;
+    margin: 2%;
+}
+
+fieldset{
+    margin-bottom: 1em;
+}
+
+select{
+    font-size: 3em;
+    padding: 0.1em;
+    padding-right: 2em;
+}
+
+
+/*Inputs e labels*/
+label{
+    font-size: 3.2em;
+}
+
+fieldset>label:nth-of-type(odd){
+    padding-left: 1em;
+}
+
+input{
+    font-size: 3em;
+}
+
+/*----------Dados iniciais------------------*/
+.dados-iniciais>fieldset>label:nth-of-type(even){
+    position: absolute;
+    left: 66%;
+}
+
+#tempo,.dados-iniciais>fieldset>input:nth-of-type(even){
+    position: absolute;
+    left: 82%;
+}
+
+.dados-iniciais>fieldset>input:nth-of-type(odd){
+    position: absolute;
+    left: 22%;
+}
+
+
+/*---------atributos-----------*/
+
+.dados-atributos-b1>fieldset>label:nth-of-type(even){
+    position: absolute;
+    left: 66%;
+}
+
+.dados-atributos-b1>fieldset>input:nth-of-type(even){
+    position: absolute;
+    left: 82%;
+}
+
+.dados-atributos-b1>fieldset>input:nth-of-type(odd){
+    position: absolute;
+    left: 20%;    
+}
+
+
+
+
+/*--------------------------------Classes e Id's*/
+.titulo{
+    margin: 0;
+    text-align: center;
+    font-size: 4em;
+   
+}
+
+.labelNumero{
+    width: 3.8em;
+}
+
