@@ -9,12 +9,12 @@
       
     <body>
         <h1 class="titulo">RPG NARUTO</h1>
-        
+        <h2>Dados Iniciais</h2>
         <section class="dados-iniciais">
-            <h2>Dados Iniciais</h2>
+            
             <fieldset>
                 <label for="nome">Nome</label>
-                <input id="nome" type="text" name="nome" required autofocus pattern="\w{2,}" title="Somente letras A-Z de no mínimo 4 caracteres" placeholder="Seu nome" maxlength="16" size="12">
+                <input id="nome" type="text" name="nome" required autofocus pattern="\w{2,}" title="Somente letras A-Z de no mínimo 4 caracteres" placeholder="Seu nome" maxlength="20" size="10">
 
                 <label for="idade">Idade</label>
                 <input id="idade" class="labelNumero" type="number" placeholder="Idade">
@@ -22,7 +22,7 @@
 
             <fieldset>
                 <label for="aldeia">Aldeia</label>
-                <input id="aldeia" type="text" name="aldeia" required autofocus pattern="[A-Za-z]{2,}" title="Somente letras A-Z de no mínimo 4 caracteres" placeholder="Sua aldeia" maxlength="16" size="12">
+                <input id="aldeia" type="text" name="aldeia" required autofocus pattern="[A-Za-z]{2,}" title="Somente letras A-Z de no mínimo 4 caracteres" placeholder="Sua aldeia" maxlength="16" size="10">
 
                 <label for="tempo">Tempo</label>
                 <select id="tempo">
@@ -64,7 +64,7 @@
                 <label for="agilidade">AGI</label>
                 <input id="agilidade" class="labelNumero" type="number" placeholder="Agilidade">
                 
-                <label for="mira">MIRA</label>
+                <label for="mira">MIR</label>
                 <input id="mira" class="labelNumero" type="number" placeholder="Mira">        
             </fieldset>
             
@@ -96,29 +96,47 @@
         <section class="dados-atributos-b2">
             <fieldset>
                 <label for="hp">HP</label>
-                <input id="hp" class="labelNumero" type="number" placeholder="HP"> 
-                <input id="max-hp" class="labelNumero" type="number" placeholder="Max HP"> 
+                <input id="hp" class="labelNumero-especial" type="number" placeholder="HP">
+                
+                <label class="barra">/</label>
+                <input id="max-hp" class="labelNumero-especial" type="number" placeholder="Max"> 
+                
+                <label for="cla" class="labelb2">Clã</label>
+                <input id="cla" type="text" required autofocus pattern="\w{2,}" placeholder="Clã" size="10">
             </fieldset>
             
             <fieldset>
                 <label for="chacara">CHA</label>
-                <input id="chacara" class="labelNumero" type="number" placeholder="Chacara"> 
-                <input id="max-chacara" class="labelNumero" type="number" placeholder="Max Chacara"> 
+                <input id="chacara" class="labelNumero-especial" type="number" placeholder="Cha"> 
+                
+                <label class="barra">/</label>
+                <input id="max-chacara" class="labelNumero-especial" type="number" placeholder="Max"> 
+                
+                <label for="ninjutsu" class="labelb2">Ninjutsu</label>
+                <input id="ninjutsu" class="labelNumero" type="number"  placeholder="Ninjutsu">
             </fieldset>
             
              <fieldset>
                 <label for="level">LV</label>
                 <input id="level" class="labelNumero" type="number" placeholder="Level" required autofocus pattern="\d{1,2}"> 
+            
+                <label for="taijutsu" class="labelb2">Taijutsu</label>
+                <input id="taijutsu" class="labelNumero" type="number"  placeholder="Taijutsu">
             </fieldset>
             
             <fieldset>
                 <label for="xp">XP</label>
-                <input id="xp" class="labelNumero" type="number" placeholder="Experiência"> 
-                <input id="max-xp" class="labelNumero" type="number" placeholder="Max Experiência"> 
+                <input id="xp" class="labelNumero-especial" type="number" placeholder="Exp"> 
+                
+                <label class="barra">/</label>
+                <input id="max-xp" class="labelNumero-especial" type="number" placeholder="Max"> 
+                
+                <label for="genjutsu" class="labelb2">Genjutsu</label>
+                <input id="genjutsu" class="labelNumero" type="number"  placeholder="Genjutsu">
             </fieldset>
             
             <fieldset>
-                <label for="classe">Classe</label>
+                <label for="classe" class="classe">Classe</label>
                 <select>
                     <option value="genin">Genin</option>
                     <option value="chuunin">Chuunin</option>
@@ -127,11 +145,9 @@
                     <option value="kage">kage</option>
                     <option value="nukenin">Nukenin</option>
                 </select>
-            </fieldset>
-            
-            <fieldset>
-                <label for="carisma">Carisma</label>
-                <select>
+                
+                <label for="carisma" class="labelb2">Carisma</label>
+                <select id="carisma">
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -143,67 +159,52 @@
                     <option value="9">9</option>
                     <option value="10">10</option>
                 </select>
-            </fieldset>
-        </section>
-        
-        <section class="dados-atributos-b3">
-            <fieldset>
-                <label for="cla">Clã</label>
-                <input id="cla" type="text" required autofocus pattern="\w{2,}" placeholder="Clã">
+            
             </fieldset>
             
             <fieldset>
-                <label for="elemento">Elemento</label>
+                <label for="elemento">Elemento(s)</label>
                 <input id="elemento" type="text" required autofocus pattern="\w{2,}"  placeholder="Elemento">
             </fieldset>
             
-            <fieldset>
-                <label for="ninjutsu">Ninjutsu</label>
-                <input id="ninjutsu" class="labelNumero" type="number"  placeholder="Ninjutsu">
-            </fieldset>
-            
-            <fieldset>
-                <label for="taijutsu">Taijutsu</label>
-                <input id="taijutsu" class="labelNumero" type="number"  placeholder="Taijutsu">
-            </fieldset>
-            
-            <fieldset>
-                <label for="genjutsu">Genjutsu</label>
-                <input id="genjutsu" class="labelNumero" type="number"  placeholder="Genjutsu">
-            </fieldset>
-            
-            
         </section>
         
+        <h2>Mochila</h2>
         <section class="dados-mochila">
             <fieldset>
                 
-                <h2>Mochila</h2>
-                <label for="peso">Peso</label><input id="peso" class="labelNumero" type="number" placeholder="Peso">
-                <label for="ryo">RYO</label><input id="ryo" class="labelNumero" type="number" placeholder="Dinheiro em moedas ninjas">
+                <label for="peso" class="peso">Peso</label>
+                <input id="peso" class="labelNumero-especial" type="number" placeholder="Peso">
+                <label class="barra">/</label>
+                <input id="max-peso" class="labelNumero-especial" type="number" placeholder="Max">
                 
-                <table>
-                    <tr>
-                        <th>Nome</th>
-                        <th>Informações do objeto</th>
-                        <th>Peso</th>
-                        <th>Quantidade</th>
-                    </tr>
-                    <tr>
-                        <td><input id="obj-nome" type="text" placeholder="Objeto"></td>
-                        <td><input id="obj-caracteristicas"  placeholder="Caracteristicas do objeto"></td>
-                        <td><input id="obj-peso" class="labelNumero" type="number" placeholder="Peso do objeto"></td>
-                        <td><input id="obj-quantidade" class="labelNumero" type="number" placeholder="Quantidade de objetos"></td>
-                    </tr>
-                    
-                </table>
+                <label for="ryo" class="ryo">RYO</label>
+                <input id="ryo" class="labelNumero" type="number" placeholder="Moedas">
+                
             </fieldset>
             
+            <table>
+                <tr>
+                    <th>Nome</th>
+                    <th>Informações do objeto</th>
+                    <th>Peso</th>
+                    <th>Quantidade</th>
+                </tr>
+                <tr>
+                    <td><input id="obj-nome" type="text" placeholder="Objeto"></td>
+                    <td><input id="obj-caracteristicas"  placeholder="Caracteristicas do objeto"></td>
+                    <td><input id="obj-peso" class="labelNumero" type="number" placeholder="Peso do objeto"></td>
+                    <td><input id="obj-quantidade" class="labelNumero" type="number" placeholder="Quantidade de objetos"></td>
+                </tr>
+
+            </table>
+
         </section>
         
+        <h2>Armas</h2>
         <section class="dados-armas">
             <fieldset>
-                <h2>Armas</h2>
+                
                 <table>
                     <tr>
                         <th>Nome</th>
@@ -222,9 +223,10 @@
             </fieldset>
         </section>
     
+        <h2>Justsus</h2>
         <section class="dados-jutsus">
             <fieldset>
-                <h2>Justsus</h2>
+        
                 <table>
                     <tr>
                         <th>Nome</th>
@@ -241,13 +243,15 @@
             </fieldset>
         </section>
         
+        <h2>Outros</h2>
         <section class="dados-outros">
             <fieldset>
-                <h2>Outros</h2>
+                
                 <ul class="lista-outros">
                 </ul>
             </fieldset>
         </section>
     </body>
+    <script src="calculos.js"></script>
     
 </html>

@@ -6,48 +6,59 @@ body{
 }
 
 h2{
-    font-size: 3.5em;
-    margin: 2%;
+    font-size: 4.5em;
+    margin: 8% 0 5% 12% ;
 }
 
 fieldset{
-    margin-bottom: 1em;
+    margin: 2.2em 0 1.2em 0;
 }
 
 select{
+    border: 2px solid black;
     font-size: 3em;
     padding: 0.1em;
     padding-right: 2em;
 }
 
-
-/*Inputs e labels*/
-label{
-    font-size: 3.2em;
+.dados-iniciais,.dados-atributos-b1,.dados-atributos-b2{
+    width: 140%;
+    padding: 50px 0 50px 0;
+    border: 10px solid black;
 }
 
-fieldset>label:nth-of-type(odd){
-    padding-left: 1em;
+
+/*----------Inputs e labels------------*/
+label{
+    font-size: 4.2em;
 }
 
 input{
-    font-size: 3em;
+    text-transform: capitalize;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 4em;
+}
+
+
+fieldset>label:nth-of-type(odd),.peso{
+    padding-left: 1em;
 }
 
 /*----------Dados iniciais------------------*/
-.dados-iniciais>fieldset>label:nth-of-type(even){
+.dados-iniciais>fieldset>label:nth-of-type(even),.ryo{
     position: absolute;
-    left: 66%;
+    left: 78%;
 }
 
-#tempo,.dados-iniciais>fieldset>input:nth-of-type(even){
+#tempo,.dados-iniciais>fieldset>input:nth-of-type(even),#ryo{
     position: absolute;
-    left: 82%;
+    left: 100%;
 }
 
 .dados-iniciais>fieldset>input:nth-of-type(odd){
     position: absolute;
-    left: 22%;
+    left: 28%;
 }
 
 
@@ -58,22 +69,51 @@ input{
     left: 66%;
 }
 
+.labelb2{
+    position: absolute;
+    right: 12%;
+}
+
+
 .dados-atributos-b1>fieldset>input:nth-of-type(even){
     position: absolute;
     left: 82%;
 }
 
+
 .dados-atributos-b1>fieldset>input:nth-of-type(odd){
     position: absolute;
-    left: 20%;    
+    left: 22%;    
 }
 
 
+#cla,#ninjutsu,#genjutsu,#taijutsu,#carisma{
+    position: absolute;
+    left: 91%;
+}
 
+#chacara,#hp,#xp,#level,#peso{
+    position: absolute;
+    left: 23%;  
+}
+
+.classe{
+    padding-right: 30px;
+}
+
+#max-chacara,#max-hp,#max-xp,#max-peso{
+    position: absolute;
+    left: 43%;  
+}
+
+#elemento{
+    position: absolute;
+    left: 44%;
+}
 
 /*--------------------------------Classes e Id's*/
 .titulo{
-    margin: 0;
+    
     text-align: center;
     font-size: 4em;
    
@@ -81,5 +121,60 @@ input{
 
 .labelNumero{
     width: 3.8em;
+    text-align: center; 
 }
 
+.barra{
+    position: absolute;
+    left:40%;
+    
+    font-family:fantasy;
+    
+   
+}
+
+.labelNumero-especial{    
+    border: none;
+    width: 2.5em;
+    text-align: center; 
+}
+
+
+/*------------------Tabelas---------------*/
+
+table{
+    width: 100%;
+	margin-bottom : .5em;
+}
+
+
+th{
+    text-align: center;
+    font-weight: lighter;
+    background-color: #EEE;
+    font-size: 3.5em;
+    padding: 18px 0 18px 0; 
+}
+
+td>input{   
+    border: none;
+}
+
+th{
+	padding: .7em;
+	margin: 0;
+	border: 0.5em solid #ccc;
+    
+}
+
+td{
+    border: 1.45em solid #ccc;
+}
+
+table input{
+    text-align: center;
+}
+
+#arma-quantidade,#obj-quantidade{
+    width:340px;
+}
