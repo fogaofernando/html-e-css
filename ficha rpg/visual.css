@@ -80,6 +80,11 @@ fieldset>label:nth-of-type(odd),.peso{
     left: 82%;
 }
 
+#pontos{
+    position: absolute;
+    left: 60%;
+}
+
 
 .dados-atributos-b1>fieldset>input:nth-of-type(odd){
     position: absolute;
