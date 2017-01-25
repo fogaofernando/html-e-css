@@ -19,6 +19,7 @@ select{
     font-size: 3em;
     padding: 0.1em;
     padding-right: 2em;
+    width: 6em;
 }
 
 .dados-iniciais,.dados-atributos-b1,.dados-atributos-b2{
@@ -53,12 +54,12 @@ fieldset>label:nth-of-type(odd),.peso{
 
 #tempo,.dados-iniciais>fieldset>input:nth-of-type(even),#ryo{
     position: absolute;
-    left: 100%;
+    left: 102%;
 }
 
 .dados-iniciais>fieldset>input:nth-of-type(odd){
     position: absolute;
-    left: 28%;
+    left: 29.5%;
 }
 
 
@@ -88,7 +89,7 @@ fieldset>label:nth-of-type(odd),.peso{
 
 .dados-atributos-b1>fieldset>input:nth-of-type(odd){
     position: absolute;
-    left: 22%;    
+    left: 24%;    
 }
 
 
@@ -97,14 +98,14 @@ fieldset>label:nth-of-type(odd),.peso{
     left: 91%;
 }
 
+#cla{
+    width: 6.6em;
+}
 #chacara,#hp,#xp,#level,#peso{
     position: absolute;
     left: 23%;  
 }
 
-.classe{
-    padding-right: 30px;
-}
 
 #max-chacara,#max-hp,#max-xp,#max-peso{
     position: absolute;
@@ -113,7 +114,7 @@ fieldset>label:nth-of-type(odd),.peso{
 
 #elemento{
     position: absolute;
-    left: 44%;
+    left: 50%;
 }
 
 /*--------------------------------Classes e Id's*/
@@ -182,4 +183,8 @@ table input{
 
 #arma-quantidade,#obj-quantidade{
     width:340px;
+}
+
+#nome,#aldeia{
+    width: 6.8em;
 }
