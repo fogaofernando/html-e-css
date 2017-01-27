@@ -14,19 +14,19 @@
             
             <fieldset>
                 <label for="nome">Nome</label>
-                <input id="nome" type="text" name="nome" required autofocus pattern="\w{2,}" title="Somente letras A-Z de no mínimo 4 caracteres" placeholder="Seu nome" maxlength="20" size="10">
+                <input id="nome" class="iniciais" type="text" name="nome" required autofocus pattern="\w{2,}" title="Somente letras A-Z de no mínimo 4 caracteres" placeholder="Seu nome" maxlength="20" size="10">
                 
                 
                 <label for="idade">Idade</label>
-                <input id="idade" class="labelNumero" type="number" placeholder="Idade">
+                <input id="idade" class="labelNumero iniciais" type="number" placeholder="Idade">
             </fieldset>
 
             <fieldset>
                 <label for="aldeia">Aldeia</label>
-                <input id="aldeia" type="text" name="aldeia" required autofocus pattern="[A-Za-z]{2,}" title="Somente letras A-Z de no mínimo 4 caracteres" placeholder="Sua aldeia" maxlength="16" size="10">
+                <input id="aldeia" class="iniciais" type="text" name="aldeia" required autofocus pattern="[A-Za-z]{2,}" title="Somente letras A-Z de no mínimo 4 caracteres" placeholder="Sua aldeia" maxlength="16" size="10">
 
                 <label for="tempo">Tempo</label>
-                <select id="tempo">
+                <select id="tempo" class="iniciais">
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -47,103 +47,103 @@
         <section class="dados-atributos-b1">
             <fieldset>
                 <label for="ataque">ATA</label>
-                <input id="ataque" class="labelNumero" type="number" placeholder="Ataque">
+                <input id="ataque" class="labelNumero atributosB1" type="number" placeholder="Ataque">
                 
                 <label for="inteligencia">INT</label>
-                <input id="inteligencia" class="labelNumero" type="number" placeholder="Inteligência">        
+                <input id="inteligencia" class="labelNumero atributosB1" type="number" placeholder="Inteligência">        
             </fieldset>
             
             <fieldset>
                 <label for="defesa">DEF</label>
-                <input id="defesa" class="labelNumero" type="number" placeholder="Defesa">
+                <input id="defesa" class="labelNumero atributosB1" type="number" placeholder="Defesa">
                 
                 <label for="sorte">SOR</label>
-                <input id="sorte" class="labelNumero" type="number" placeholder="Sorte">        
+                <input id="sorte" class="labelNumero atributosB1" type="number" placeholder="Sorte">        
             </fieldset>
             
             <fieldset>
                 <label for="agilidade">AGI</label>
-                <input id="agilidade" class="labelNumero" type="number" placeholder="Agilidade">
+                <input id="agilidade" class="labelNumero atributosB1" type="number" placeholder="Agilidade">
                 
                 <label for="mira">MIR</label>
-                <input id="mira" class="labelNumero" type="number" placeholder="Mira">        
+                <input id="mira" class="labelNumero atributosB1" type="number" placeholder="Mira">        
             </fieldset>
             
             <fieldset>
                 <label for="força">FOR</label>
-                <input id="força" class="labelNumero" type="number" placeholder="Força">
+                <input id="força" class="labelNumero atributosB1" type="number" placeholder="Força">
                 
                 <label for="velocidade">VEL</label>
-                <input id="velocidade" class="labelNumero" type="number" placeholder="Velocidade">        
+                <input id="velocidade" class="labelNumero atributosB1" type="number" placeholder="Velocidade">        
             </fieldset>
             
             <fieldset>
                 <label for="desvio">DES</label>
-                <input id="desvio" class="labelNumero" type="number" placeholder="Desvio">
+                <input id="desvio" class="labelNumero atributosB1" type="number" placeholder="Desvio">
                 
                 <label for="resistencia">RES</label>
-                <input id="resistencia" class="labelNumero" type="number" placeholder="Resistência">        
+                <input id="resistencia" class="labelNumero atributosB1" type="number" placeholder="Resistência">        
             </fieldset> 
              
             <fieldset>
                 <label for="percepção">PER</label>
-                <input id="percepção" class="labelNumero" type="number" placeholder="Percepção">
+                <input id="percepção" class="labelNumero atributosB1" type="number" placeholder="Percepção">
                 
                 <label for="sabedoria">SAB</label>
-                <input id="sabedoria" class="labelNumero" type="number" placeholder="Sabedoria">        
+                <input id="sabedoria" class="labelNumero atributosB1" type="number" placeholder="Sabedoria">        
             </fieldset> 
             
             <fieldset>
                 <label for="percepção">Pontos Totais: </label>
-                <input id="pontos" class="labelNumero" type="number" placeholder="Pts">
+                <input id="pontos" class="labelNumero atributosB1" type="number" placeholder="Pts">
             </fieldset>
         </section>
         
         <section class="dados-atributos-b2">
             <fieldset>
                 <label for="hp">HP</label>
-                <input id="hp" class="labelNumero-especial" type="number" placeholder="HP">
+                <input id="hp" class="labelNumero-especial atributosB2" type="number" placeholder="HP">
                 
                 <label class="barra">/</label>
-                <input id="max-hp" class="labelNumero-especial" type="number" placeholder="Max"> 
+                <input id="max-hp" class="labelNumero-especial atributosB2" type="number" placeholder="Max"> 
                 
                 <label for="cla" class="labelb2">Clã</label>
-                <input id="cla" type="text" required autofocus pattern="\w{2,}" placeholder="Clã" size="10">
+                <input id="cla" class="atributosB2" type="text" required autofocus pattern="\w{2,}" placeholder="Clã" size="10">
             </fieldset>
             
             <fieldset>
                 <label for="chacara">CHA</label>
-                <input id="chacara" class="labelNumero-especial" type="number" placeholder="Cha"> 
+                <input id="chacara" class="labelNumero-especial atributosB2" type="number" placeholder="Cha"> 
                 
                 <label class="barra">/</label>
-                <input id="max-chacara" class="labelNumero-especial" type="number" placeholder="Max"> 
+                <input id="max-chacara" class="labelNumero-especial atributosB2" type="number" placeholder="Max"> 
                 
-                <label for="ninjutsu" class="labelb2">Ninjutsu</label>
-                <input id="ninjutsu" class="labelNumero" type="number"  placeholder="Ninjutsu">
+                <label for="ninjutsu" class="labelb2" >Ninjutsu</label>
+                <input id="ninjutsu" class="labelNumero atributosB2" type="number"  placeholder="Ninjutsu">
             </fieldset>
             
              <fieldset>
                 <label for="level">LV</label>
-                <input id="level" class="labelNumero" type="number" placeholder="Level" required autofocus pattern="\d{1,2}"> 
+                <input id="level" class="labelNumero atributosB2" type="number" placeholder="Level" required autofocus pattern="\d{1,2}"> 
             
                 <label for="taijutsu" class="labelb2">Taijutsu</label>
-                <input id="taijutsu" class="labelNumero" type="number"  placeholder="Taijutsu">
+                <input id="taijutsu" class="labelNumero atributosB2" type="number"  placeholder="Taijutsu">
             </fieldset>
             
             <fieldset>
                 <label for="xp">XP</label>
-                <input id="xp" class="labelNumero-especial" type="number" placeholder="Exp"> 
+                <input id="xp" class="labelNumero-especial atributosB2" type="number" placeholder="Exp"> 
                 
                 <label class="barra">/</label>
-                <input id="max-xp" class="labelNumero-especial" type="number" placeholder="Max"> 
+                <input id="max-xp" class="labelNumero-especial atributosB2" type="number" placeholder="Max"> 
                 
                 <label for="genjutsu" class="labelb2">Genjutsu</label>
-                <input id="genjutsu" class="labelNumero" type="number"  placeholder="Genjutsu">
+                <input id="genjutsu" class="labelNumero atributosB2" type="number"  placeholder="Genjutsu">
             </fieldset>
             
             <fieldset>
                 <label for="classe" >Classe</label>
-                <select id="classe">
+                <select id="classe" class="atributosB2">
                     <option value="genin">Genin</option>
                     <option value="chuunin">Chuunin</option>
                     <option value="jounin">Jounin</option>
@@ -153,7 +153,7 @@
                 </select>
                 
                 <label for="carisma" class="labelb2">Carisma</label>
-                <select id="carisma">
+                <select id="carisma" class="atributosB2">
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -170,7 +170,7 @@
             
             <fieldset>
                 <label for="elemento">Elemento(s)</label>
-                <input id="elemento" type="text" required autofocus pattern="\w{2,}"  placeholder="Elemento">
+                <input id="elemento" class="atributosB2" type="text" required autofocus pattern="\w{2,}"  placeholder="Elemento">
             </fieldset>
             
         </section>
@@ -180,12 +180,12 @@
             <fieldset>
                 
                 <label for="peso" class="peso">Peso</label>
-                <input id="peso" class="labelNumero-especial" type="number" placeholder="Peso">
+                <input id="peso" class="labelNumero-especial mochila" type="number" placeholder="Peso">
                 <label class="barra">/</label>
-                <input id="max-peso" class="labelNumero-especial" type="number" placeholder="Max">
+                <input id="max-peso" class="labelNumero-especial mochila" type="number" placeholder="Max">
                 
                 <label for="ryo" class="ryo">RYO</label>
-                <input id="ryo" class="labelNumero" type="number" placeholder="Moedas">
+                <input id="ryo" class="labelNumero mochila" type="number" placeholder="Moedas">
                 
             </fieldset>
             
@@ -197,10 +197,10 @@
                     <th>Quantidade</th>
                 </tr>
                 <tr>
-                    <td><input id="obj-nome" type="text" placeholder="Objeto"></td>
-                    <td><input id="obj-caracteristicas"  placeholder="Caracteristicas do objeto"></td>
-                    <td><input id="obj-peso" class="labelNumero" type="number" placeholder="Peso do objeto"></td>
-                    <td><input id="obj-quantidade" class="labelNumero" type="number" placeholder="Quantidade de objetos"></td>
+                    <td><input id="obj-nome" class="listaMochila" type="text" placeholder="Objeto"></td>
+                    <td><input id="obj-caracteristicas" class="listaMochila"  placeholder="Caracteristicas do objeto"></td>
+                    <td><input id="obj-peso" class="labelNumero listaMochila" type="number" placeholder="Peso"></td>
+                    <td><input id="obj-quantidade" class="labelNumero listaMochila" type="number" placeholder="Quantidade"></td>
                 </tr>
 
             </table>
@@ -219,10 +219,10 @@
                         <th>Quantidade</th>
                     </tr>
                     <tr>
-                        <td><input id="arma-nome" type="text" placeholder="Nome da arma"></td>
-                        <td><input id="arma-detalhes" type="text" placeholder="Detalhes da arma"></td>
-                        <td><input id="arma-peso" class="labelNumero" type="number" placeholder="Peso da arma"></td>
-                        <td><input id="arma-quantidade" class="labelNumero" type="number" placeholder="Quantidade de armas"></td>
+                        <td><input id="arma-nome" class="listaArmas" type="text" placeholder="Nome da arma"></td>
+                        <td><input id="arma-detalhes" class="listaArmas" type="text" placeholder="Detalhes da arma"></td>
+                        <td><input id="arma-peso" class="labelNumero listaArmas" type="number" placeholder="Peso"></td>
+                        <td><input id="arma-quantidade" class="labelNumero listaArmas" type="number" placeholder="Quantidade"></td>
                     </tr>
                     
                 </table>
@@ -240,9 +240,9 @@
                         <th>Chácara</th>
                     </tr>
                     <tr>
-                        <td><input id="jutsu-nome" type="text" placeholder="Nome do jutsu"></td>
-                        <td><input id="jutsu-Informacoes" type="text" placeholder="Informações do jutsu"></td>
-                        <td><input id="jutsu-chacara" class="labelNumero" type="text" placeholder="Custo de chácara do jutsu"></td>
+                        <td><input id="jutsu-nome" class="listaJutsus" type="text" placeholder="Nome do jutsu"></td>
+                        <td><input id="jutsu-Informacoes" class="listaJutsus" type="text" placeholder="Informações do jutsu"></td>
+                        <td><input id="jutsu-chacara" class="labelNumero listaJutsus" type="text" placeholder="Custo"></td>
                     </tr>
                     
                 </table>

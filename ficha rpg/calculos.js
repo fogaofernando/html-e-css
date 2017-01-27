@@ -1,55 +1,20 @@
 /*---------------PRINCIPAL---------------*/
 
-//Variaveis/Instanciamento
-var input = document.querySelectorAll("input"); 
-var dadosI = new Array(3);
-var atributosB1 = new Array(13);
-var atributosB2 = new Array(12);
-var mochila = new Array(3);
-var listaMochila = new Array(4);
-var listaArmas = new Array(4);
-var listaJutsus = new Array(3);
-
-//Desenvolvimento
-atualizarDados();
-organizaInputs();
-
-
+var iniciais = document.querySelectorAll(".iniciais");
+var atributosB1 = document.querySelectorAll(".atributosB1");
+var atributosB2 = document.querySelectorAll(".atributosB2");
+var mochila = document.querySelectorAll(".mochila");
+var listaMochila = document.querySelectorAll(".listaMochila");
+var listaArmas = document.querySelectorAll(".listaArmas");
+var listaJutsus = document.querySelectorAll(".listaJutsus");
 
 /*---------------FUNÇÕES---------------*/
 
-function organizaInputs(){
-    input.forEach(function(inputAtual,cont){
-        
-        if(cont<3){
-            dadosI[cont] = inputAtual;
-        
-        }else if(cont<16){
-            atributosB1[cont-3] = inputAtual;
-        
-        }else if(cont<28){
-            atributosB2[cont-16] = inputAtual;
-        
-        }else if(cont<31){
-            mochila[cont-28] = inputAtual;
-        
-        }else if(cont<35){
-            listaMochila[cont-31] = inputAtual;
-        
-        }else if(cont<39){
-            listaArmas[cont-35] = inputAtual;
-        
-        }else{
-            listaJutsus[cont-39] = inputAtual;
-        } 
-    });
-    
-    
-}
-
 
 function atualizarDados(){
-    importarDados("nome");
+    input.forEach(function (valorAtual,cont){
+        //input[] = 5;
+    });
 }
 
 
@@ -58,10 +23,11 @@ function salvarDados(){
 }
 
 
-
 /*      Funçoes storage     */
-function importarDados(valorS){
-    document.getElementById(valorS).value = localStorage.getItem(valorS);
+
+function importarDados(nome){
+    recebeDados = localStorage.getItem(nome);
+    return recebeDados;
 }
 
 function exportarDados(valorS){
