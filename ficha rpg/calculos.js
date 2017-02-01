@@ -1,3 +1,5 @@
-atributosB1[0].addEventListener("focusout",function(){
-    alert("apertou up");
+atributosB1.forEach(function (valor){
+    valor.addEventListener("focusout",function(){
+        
+    });
 });

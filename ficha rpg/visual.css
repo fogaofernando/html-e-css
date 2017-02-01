@@ -22,10 +22,13 @@ select{
     width: 6em;
 }
 
-.dados-iniciais,.dados-atributos-b1,.dados-atributos-b2{
-    width: 140%;
-    padding: 50px 0 50px 0;
-    border: 10px solid black;
+button{
+    font-size: 3.8em;
+    padding: .9em 3em .9em 3em;
+    margin: .2em 0 .2em .6em;
+    border-radius: .6em;
+    background:linear-gradient(#ccc,#fff,#ccc);
+    border: .1em solid #ccc;
 }
 
 
@@ -145,6 +148,11 @@ fieldset>label:nth-of-type(odd),.peso{
     text-align: center; 
 }
 
+.dados-iniciais,.dados-atributos-b1,.dados-atributos-b2{
+    width: 140%;
+    padding: 50px 0 50px 0;
+    border: 10px solid black;
+}
 
 /*------------------Tabelas---------------*/
 

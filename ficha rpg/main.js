@@ -1,5 +1,7 @@
 /*---------------PRINCIPAL---------------*/
 
+/*Variaveis/inicialização*/
+
 //DOM
 var iniciais = document.querySelectorAll(".iniciais");
 var atributosB1 = document.querySelectorAll(".atributosB1");
@@ -9,7 +11,18 @@ var listaMochila = document.querySelectorAll(".listaMochila");
 var listaArmas = document.querySelectorAll(".listaArmas");
 var listaJutsus = document.querySelectorAll(".listaJutsus");
 
+
+//Quantidade de tags por lista
+var lista = [Number(importarDados("QT_LISTA_MOCHILA")),
+             Number(importarDados("QT_LISTA_ARMAS")),
+             Number(importarDados("QTLISTA_JUTSUS"))
+            ];
+var tabela = document.querySelectorAll("table");
+
+/*Atualizando dados nas variaveis e nas tags*/
 carregarDados();
+
+    
 /*---------------FUNÇÕES---------------*/
 
 
@@ -75,6 +88,30 @@ function auxiliaSalvarDOM(valor){
 //Retorno:  Null;
 function auxiliaCarregarDOM(valor, cont){
     iniciais = importarDados(valor.id,valor.value)
+}
+
+
+/*      Fuções campo das listas*/
+
+//Cria um novo campo mochila;
+function campoMochila(){
+    lista[0]++;
+    var novoCampo =
+            "<tr>"+
+                "<td><input id='obj"+String(lista[0])+"-nome' class='listaMochila' type='text' placeholder='Objeto'></td>"+
+                "<td><input id='obj"+String(lista[0])+"-caracteristicas' class='listaMochila'  placeholder='Caracteristicas do objeto'></td>"+
+                "<td><input id='obj"+String(lista[0])+"-peso' class='labelNumero listaMochila' type='number' placeholder='Peso'></td>"+
+                "<td><input id='obj"+String(lista[0])+"-quantidade' class='labelNumero listaMochila' type='number' placeholder='Quantidade'></td>"+
+            "</tr>";
+    tabela[0].innerHTML = tabela[0].innerHTML + novoCampo; 
+}
+
+function campoArmas(){
+    
+}
+
+function campoJutsus(){
+    
 }
 
 
