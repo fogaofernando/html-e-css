@@ -3,13 +3,15 @@
 /*Variaveis/inicialização*/
 
 //DOM
+var input = document.querySelectorAll("input");
+var select = document.querySelectorAll("select");
 var iniciais = document.querySelectorAll(".iniciais");
 var atributosB1 = document.querySelectorAll(".atributosB1");
 var atributosB2 = document.querySelectorAll(".atributosB2");
 var mochila = document.querySelectorAll(".mochila");
 var listaMochila;
-var listaArmas = document.querySelectorAll(".listaArmas");
-var listaJutsus = document.querySelectorAll(".listaJutsus");
+var listaArmas;
+var listaJutsus;
 
 
 //Quantidade de tags por lista
@@ -19,8 +21,8 @@ var lista = [Number(importarDados("QT_LISTA_MOCHILA")),
             ];
 
 var tabela = document.querySelectorAll("table");
-var botao = document.querySelectorAll("button");
-/*Atualizando dados nas variaveis e nas tags*/
+
+//Atualizando dados nas variaveis e nas tags
 carregarDados();
 
     
@@ -30,6 +32,7 @@ carregarDados();
 //Objetivo: Salva todos os dados quando chamado;
 function salvarDados(){
     var cont;
+   
     
     iniciais.forEach(auxiliaSalvarDOM);
     atributosB1.forEach(auxiliaSalvarDOM);
@@ -40,7 +43,10 @@ function salvarDados(){
     listaArmas.forEach(auxiliaSalvarDOM);
     listaJutsus.forEach(auxiliaSalvarDOM);
     
+    console.log(">>>"+lista);
     exportarDados("QT_LISTA_MOCHILA",lista[0]);
+    exportarDados("QT_LISTA_ARMAS",lista[1]);
+    exportarDados("QTLISTA_JUTSUS",lista[2]);
 }
 
 
@@ -60,18 +66,12 @@ function carregarDados(){
     for(cont =0;cont<atributosB2.length;cont++){
         atributosB2[cont].value = importarDados(atributosB2[cont].id);
     }
-    
-    for(cont =0;cont<mochila.length;cont++){
+}
+
+
+function carregarDadosLista(){
+     for(cont =0;cont<mochila.length;cont++){
         mochila[cont].value = importarDados(mochila[cont].id);
-    }
-    
-        
-    for(cont =0;cont<listaArmas.length;cont++){
-        listaArmas[cont].value = importarDados(listaArmas[cont].id);
-    }
-    
-    for(cont =0;cont<listaJutsus.length;cont++){
-        listaJutsus[cont].value = importarDados(listaJutsus[cont].id);
     }
 }
 
@@ -90,9 +90,6 @@ function auxiliaSalvarDOM(valor){
 function auxiliaCarregarDOM(valor, cont){
     iniciais = importarDados(valor.id,valor.value)
 }
-
-
-
 
 
 
