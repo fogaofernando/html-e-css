@@ -43,7 +43,6 @@ function salvarDados(){
     listaArmas.forEach(auxiliaSalvarDOM);
     listaJutsus.forEach(auxiliaSalvarDOM);
     
-    console.log(">>>"+lista);
     exportarDados("QT_LISTA_MOCHILA",lista[0]);
     exportarDados("QT_LISTA_ARMAS",lista[1]);
     exportarDados("QTLISTA_JUTSUS",lista[2]);
@@ -65,6 +64,10 @@ function carregarDados(){
     
     for(cont =0;cont<atributosB2.length;cont++){
         atributosB2[cont].value = importarDados(atributosB2[cont].id);
+    }
+    
+    for(cont =0;cont<mochila.length;cont++){
+        mochila[cont].value = importarDados(mochila[cont].id);
     }
 }
 

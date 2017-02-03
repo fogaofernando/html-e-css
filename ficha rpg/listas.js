@@ -58,24 +58,30 @@ function tagCampoJutsus(posicaoTag){
 //Objetivo: Quando clicado, adiciona um novo campo mochila;
 function novoCampoMochila(){
     lista[0]++;
+    salvarDados();
     tagCampoMochila(lista[0]);
     atualizaDados();
+    
 }
 
 
 //Objetivo: Quando clicado, adiciona um novo campo armas;
 function novoCampoArmas(){
     lista[1]++;
+    salvarDados();
     tagCampoArmas(lista[1]);
     atualizaDados();
+    
 }
 
 
 //Objetivo: Quando clicado, adiciona um novo campo jutsus;
 function novoCampoJutsus(){
     lista[2]++;
+    salvarDados();
     tagCampoJutsus(lista[2]);
     atualizaDados();
+    
 }
 
 
@@ -92,6 +98,14 @@ function inicializaListas(){
         tagCampoMochila(cont);       
     }
     
+    for(cont =0;cont<=lista[1];cont++){
+        tagCampoArmas(cont);       
+    }
+    
+    for(cont =0;cont<=lista[2];cont++){
+        tagCampoJutsus(cont);        
+    }
+    
     //atualizando os dados
     atualizaDados();
 }
@@ -99,9 +113,6 @@ function inicializaListas(){
 
 //Objetivo: Atualiza todos os dados das listas 
 function atualizaDados(){
-    //atualizar os inputs
-    input = document.querySelectorAll("input"); 
-    
     //Atribuindo dados mochila
     for(cont =0;cont<=lista[0];cont++){
         listaMochila = document.querySelectorAll(".listaMochila");
