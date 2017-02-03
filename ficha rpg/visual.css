@@ -154,6 +154,15 @@ fieldset>label:nth-of-type(odd),.peso{
     border: 10px solid black;
 }
 
+.botoesFim>button{
+  padding: .8em 4.5em .8sem 4.5em;
+}
+
+.botoesFim{
+    display: inline-flex;
+    margin-top: 30%;
+}
+
 /*------------------Tabelas---------------*/
 
 table{

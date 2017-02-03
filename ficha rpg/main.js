@@ -49,6 +49,13 @@ function salvarDados(){
 }
 
 
+//objetivo: Apagar todos os dados e atualizar quando chamado;
+function apagarDados(){
+    localStorage.clear();
+    window.location.reload();
+}
+
+
 //Objetivo: Carrega todos os dados salvos quando chamado;
 function carregarDados(){
     var cont;
