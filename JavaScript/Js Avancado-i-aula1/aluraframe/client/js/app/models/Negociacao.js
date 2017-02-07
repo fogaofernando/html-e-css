@@ -3,7 +3,6 @@ class Negociacao{
         this._data = new Date(data.getTime());
         this._quantidade = qtd;
         this._valor =valor;
-        this.teste = 0;
         Object.freeze(this);
     }
     
