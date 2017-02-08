@@ -1,0 +1,44 @@
+<html>	
+    <head>		
+        
+    
+    </head>	
+    <body>		
+        <p>Clique na tela para ver as coordenadas do mouse!!</p>
+        <form>
+            <div id="minhaDiv">
+                teste
+            </div>
+        </form>
+    </body>
+    
+    <script type="text/javascript">
+      coordenadasObj();
+        
+        function coordenadasObj(){
+            
+            // 1. Acesso ao objeto do DOM que representa a div
+            var div = document.getElementById('minhaDiv');
+            console.log(div);
+            // 2. Manipular o objeto *style* da div para alterar sua aparência (incluindo posição)
+
+            // 2.1 Aparência
+            div.style.width = '50px';
+            div.style.height = '50px';
+            div.style.backgroundColor = '#ff0000';
+
+            // 2.2 Posição
+            div.style.position = 'absolute';
+            div.style.top = '100px';
+            div.style.left = '50px';
+
+            // 3. Pegadinha! Atenção ao alterar a posição baseada na atual:
+            var leftAtual = parseInt(div.style.left, 10);
+            div.style.left = (leftAtual + 5) + 'px'; // desloca 5px para a direita
+        }
+        
+    </script>
+</html>
+
+
+
