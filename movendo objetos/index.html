@@ -1,0 +1,32 @@
+<html onmousemove="inicializaçãoPosicaoMouse(event)">	
+    <head>		
+        <link rel="stylesheet" href="View/reset.css">  
+        <link rel="stylesheet" href="View/estilio.css">
+        
+        
+    </head>	
+    <body onmousemove="mostrarCoordenadasInput()">		
+        <p>Clique na tela para ver as coordenadas do mouse!!</p>
+        <form>
+            <label id="x">X </label>
+            <input>
+            
+            <label id="y">Y </label>
+            <input>
+        </form>
+        
+        <div class="caixa" onmousedown="seguirMouse()"></div>
+    </body>
+    
+    <script type="text/javascript">
+        
+        	
+    
+        
+    </script>
+    <script src="Model/model.js"></script>
+    <script src="Model/classes.js"></script>
+    <script src="Controller/controller.js"></script>
+    <script src="View/view.js"></script>
+    
+</html>

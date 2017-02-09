@@ -3,17 +3,24 @@
         
     
     </head>	
-    <body>		
-        <p>Clique na tela para ver as coordenadas do mouse!!</p>
+    <body onmousemove="coordenadasMouse(event)">		
+        <form>
+            <label>X </label>
+            <input>
+            
+            <label>Y </label>
+            <input>
+        </form>
         <form>
             <div id="minhaDiv">
-                teste
+                teste aqui
             </div>
         </form>
     </body>
     
     <script type="text/javascript">
-      coordenadasObj();
+        posicao = document.querySelectorAll('input');
+        coordenadasObj();
         
         function coordenadasObj(){
             
@@ -29,13 +36,26 @@
 
             // 2.2 Posição
             div.style.position = 'absolute';
-            div.style.top = '100px';
-            div.style.left = '50px';
-
+            div.style.top = '50px';
+            div.style.left = '100px';
+            
             // 3. Pegadinha! Atenção ao alterar a posição baseada na atual:
             var leftAtual = parseInt(div.style.left, 10);
             div.style.left = (leftAtual + 5) + 'px'; // desloca 5px para a direita
         }
+        
+        
+        
+        function coordenadasMouse(event){
+            
+            
+            x=event.clientX;
+            y=event.clientY;
+            
+            posicao[0].value = x;
+            posicao[1].value = y;
+            posicao[1].style.left = '800';
+        }		
         
     </script>
 </html>
