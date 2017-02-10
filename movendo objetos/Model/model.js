@@ -9,5 +9,12 @@ var caixa = getDOM('.caixa');
 //Entrada:  String com o seletor do elemento;
 //Retorno:  DOM;
 function getDOM(att){
-    return document.querySelectorAll(att);
+    let valorDOM = document.querySelectorAll(att);
+    
+    if(valorDOM.length == 1){
+        return valorDOM[0];
+    }else{
+        return valorDOM;
+    }
 }
+
