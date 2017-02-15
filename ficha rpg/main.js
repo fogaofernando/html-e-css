@@ -12,6 +12,7 @@ var mochila = document.querySelectorAll(".mochila");
 var listaMochila;
 var listaArmas;
 var listaJutsus;
+var attPeso = document.querySelectorAll('.attPeso');
 
 
 //Quantidade de tags por lista
@@ -51,8 +52,10 @@ function salvarDados(){
 
 //objetivo: Apagar todos os dados e atualizar quando chamado;
 function apagarDados(){
-    localStorage.clear();
-    window.location.reload();
+    if(confirm("Você deseja apagar todos os dados salvos nesta plataforma ?")){
+        localStorage.clear();
+        window.location.reload();    
+    }
 }
 
 

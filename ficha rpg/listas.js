@@ -15,7 +15,7 @@ function tagCampoMochila(posicaoTag){
             "<tr>"+
                 "<td><input id='obj"+String(posicaoTag)+"-nome' class='listaMochila' type='text' placeholder='Objeto'></td>"+
                 "<td><input id='obj"+String(posicaoTag)+"-caracteristicas' class='listaMochila'  placeholder='Caracteristicas do objeto'></td>"+
-                "<td><input id='obj"+String(posicaoTag)+"-peso' class='labelNumero listaMochila' type='number' placeholder='Peso'></td>"+
+                "<td><input id='obj"+String(posicaoTag)+"-peso' class='labelNumero listaMochila attPeso' type='number' placeholder='Peso'></td>"+
                 "<td><input id='obj"+String(posicaoTag)+"-quantidade' class='labelNumero listaMochila' type='number' placeholder='Quantidade'></td>"+
             "</tr>";
     
@@ -30,7 +30,7 @@ function tagCampoArmas(posicaoTag){
             "<tr>"+
                 "<td><input id='arma"+String(posicaoTag)+"-nome' class='listaArmas' type='text' placeholder='Nome da arma'></td>"+
                 "<td><input id='arma"+String(posicaoTag)+"-detalhes' class='listaArmas' type='text' placeholder='Detalhes da arma'></td>"+
-                "<td><input id='arma"+String(posicaoTag)+"-peso' class='labelNumero listaArmas' type='number' placeholder='Peso'></td>"+
+                "<td><input id='arma"+String(posicaoTag)+"-peso' class='labelNumero listaArmas attPeso' type='number' placeholder='Peso'></td>"+
                 "<td><input id='arma"+String(posicaoTag)+"-quantidade' class='labelNumero listaArmas' type='number' placeholder='Quantidade'></td>"+
             "</tr>";
     
@@ -60,7 +60,7 @@ function novoCampoMochila(){
     lista[0]++;
     salvarDados();
     tagCampoMochila(lista[0]);
-    atualizaDados();
+    atualizaDadosLista();
     
 }
 
@@ -70,7 +70,7 @@ function novoCampoArmas(){
     lista[1]++;
     salvarDados();
     tagCampoArmas(lista[1]);
-    atualizaDados();
+    atualizaDadosLista();
     
 }
 
@@ -80,7 +80,7 @@ function novoCampoJutsus(){
     lista[2]++;
     salvarDados();
     tagCampoJutsus(lista[2]);
-    atualizaDados();
+    atualizaDadosLista();
     
 }
 
@@ -107,12 +107,12 @@ function inicializaListas(){
     }
     
     //atualizando os dados
-    atualizaDados();
+    atualizaDadosLista();
 }
 
 
 //Objetivo: Atualiza todos os dados das listas 
-function atualizaDados(){
+function atualizaDadosLista(){
     //Atribuindo dados mochila
     for(cont =0;cont<=lista[0];cont++){
         listaMochila = document.querySelectorAll(".listaMochila");
