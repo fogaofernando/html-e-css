@@ -13,7 +13,7 @@ var listaMochila;
 var listaArmas;
 var listaJutsus;
 var attPeso = document.querySelectorAll('.attPeso');
-
+console.log(attPeso);
 
 //Quantidade de tags por lista
 var lista = [Number(importarDados("QT_LISTA_MOCHILA")),

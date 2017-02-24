@@ -43,12 +43,15 @@ function calculaValoresAtt(){
 }
 
 
-//Objetivo: Atrobui e valida peso dos itens;
+//Objetivo: Atribui e valida peso dos itens;
 function atribuiPeso(){
-    var totalPeso = attPeso.reduce(function (atual,proximo){
-        return Number(atual.value+proximo.value);
-    });
-    
+    if(attPeso.length != 0){
+        var totalPeso = attPeso.reduce(function (atual,proximo){
+                return Number(atual.value)+Number(proximo.value);
+            },0);
+    }else{
+        attPeso = document.querySelectorAll(".attPeso"); 
+    }
     console.log(totalPeso);
 }
 
