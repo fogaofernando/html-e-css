@@ -10,7 +10,6 @@ function inicializaçãoPosicaoMouse(event){
 }
 
 
-//
 function arrastarCaixa(ev){
     let dragObjeto = 1;
     ev.preventDefault();
@@ -35,8 +34,8 @@ function teste(){
 //Objetivo: O elemento recebe as coordenadas da caixa passada por parametro;
 //Entrada:  Elemento HTML;
 function seguirMouse(objeto){
-    objeto.style.left = posMouse.x - 25+(caixa.style.width/2);
-    objeto.style.top = posMouse.y - 25+(caixa.style.height/2);
+    objeto.style.left = posMouse.x;
+    objeto.style.top = posMouse.y; 
 }
 
 

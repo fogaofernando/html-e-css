@@ -1,6 +1,6 @@
 //-----------------------PRINCIPAL-----------------------//
 
-
+Funcoes.gravidade(caixa);
 
 //---------------------------FUNÇÕES---------------------------//
 //Objetivo: Mostra as posições x e y nos inputs

@@ -3,6 +3,8 @@ var posMouse;
 var inputs = getDOM('input');
 var caixa = getDOM('.caixa');
 
+
+caixa
 //------------------------FUNÇÕES---------------------//
 
 //Objetivo: Buscar elemento(s) html;
