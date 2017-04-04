@@ -22,6 +22,7 @@ select.forEach(function(valor){
 function dadosAtualizados(){
     salvarDados();
     calculaValoresAtt();
+    attPeso = document.querySelectorAll('.attPeso');
     atribuiPeso();
 }
 
@@ -45,7 +46,7 @@ function calculaValoresAtt(){
 
 //Objetivo: Atribui e valida peso dos itens;
 function atribuiPeso(){
-    if(attPeso.length != 0){
+    /*if(attPeso.length != 0){
         var totalPeso = attPeso.reduce(function (atual,proximo){
                 return Number(atual.value)+Number(proximo.value);
             },0);
@@ -53,6 +54,11 @@ function atribuiPeso(){
         attPeso = document.querySelectorAll(".attPeso"); 
     }
     console.log(totalPeso);
+    
+    console.log(attPeso);
+*/
+    
+
 }
 
 

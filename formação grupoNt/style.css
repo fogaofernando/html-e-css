@@ -1,0 +1,82 @@
+p{
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes slidein{
+    
+    from{
+        margin-left: 0%;
+        width: 100%;
+    }
+
+    to{
+        margin-left: 100%;
+        width: 100%;
+    }
+}
+
+
+#transicao{
+    width: 50px;
+    height: 50px;
+    margin: 35px auto 0;
+    background-color: black;
+    position: absolute;
+    left: 20%;
+
+    
+    
+    -webkit-animation: transicao 1s alternate linear infinite;
+    -moz-animation: transicao 1s alternate linear infinite;
+    -o-animation: transicao 1s alternate linear infinite;
+    animation: transicao 1s alternate linear infinite;
+}
+
+
+@-webkit-keyframes transicao{
+    0%{
+        top: 0;
+    }
+    
+    50%{
+        top: 20px;
+    }
+    
+    100%{
+        top:40px;
+        border-radius: 40px;
+    }
+    
+}@-moz-keyframes transicao{
+    0%{
+        top: 0px;
+    }
+    
+    50%{
+        top: 20px;
+    }
+    
+    100%{
+        top:40px;
+        border-radius: 40px;
+    }
+    
+}@-o-keyframes transicao{
+    0%{
+        top: 0px;
+    }
+    
+    50%{
+        top: 20px;
+    }
+    
+    100%{
+        top:40px;
+        border-radius: 40px;
+    }
+    
+}
+
