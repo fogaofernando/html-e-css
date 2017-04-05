@@ -14,27 +14,21 @@
         <script>
             angular.module("moduloPizzaria",[]),
                 angular.module("moduloPizzaria").controller("moduloPizzariaController",function($scope,$http){
-                    
+                     
                     $scope.nomeFantasia = "Pizzaria do Vando";
-                    
-                    /*$scope.listaCliente = [
-                        {nome: "Vando",telefone: "66666666",endereco: "Recanto das Emas"},
-                        {nome: "Vanderlei",telefone: "88666666",endereco: "Taguatinga"}
-                    ];*/
                 
                     var salvarClientesJSON = function(cliente){
-                         
+                        console.log(cliente);
                         $http.post('http://nt.thalissonoliveira.com.br/post.php',cliente).then(
-                             
                             function(data,status){
-                               
+                                
                                 listaClientesJSON();
                             }
                         )};
                         
                     
                     //traz os dados do JSON
-                    var listaClientesJSON =  function (){
+                    var listaClientesJSON =  function(){
                         $http.get('http://nt.thalissonoliveira.com.br/post.php').then(
                             function(data,status){
 
@@ -42,19 +36,46 @@
                             }
                         )};
                     listaClientesJSON();
+                    
+                    
+                    //excluir um cliente do JSON
+                    var excluirClienteJSON = function(cliente){
+                       
+                        $http.delete('http://nt.thalissonoliveira.com.br/post.php',cliente).then(
+                            function(data,status){
 
+                                listaClientesJSON();
+                            }
+                    )};
+                
+                
+                
                     $scope.funcAdicionar = function(cliente){
+                    
                         $scope.listaClientes.push(angular.copy(cliente));
+                    
                     }
                 
                     
                     //Salvar os dados do JSON
-                    $scope.funcSalvar =  function (cliente){
-                       
+                    $scope.funcSalvar =  function(cliente){
+                        
                         salvarClientesJSON(angular.copy(cliente));
-                    };
                     
-              
+                    };
+                
+                    
+                    $scope.funcExcluir = function(cliente){
+    
+                        excluirClienteJSON(cliente);
+                        
+                    };
+                        
+                    $scope.funcEditar = function(atualCliente){
+                        
+                        
+                    };
+                  
             });
            
             
@@ -110,8 +131,8 @@
                                 <td>{{cliente.telefone}}</td>
                                 <td>{{cliente.endereco}}</td>
                                 <td>
-                                    <button class="btn btn-success">Adicionar</button>
-                                    <button class="btn btn-danger">Excluir</button>
+                                    <button class="btn btn-warning" ng-click="funcEditar(cliente)">Editar</button>
+                                    <button class="btn btn-danger" ng-click="funcExcluir(cliente)">Excluir</button>
                                 </td>
                             
                             </tr>
