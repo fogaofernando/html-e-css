@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="moduloExemplo">
+    <head>
+        
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <title>Heloo world</title>
+        <script src="js/angular.min.js"></script>
+        
+        <script>
+        
+            //Para os módulosm, é possivel passagem de parametro(dependencias)
+            angular.module("moduloExemplo",[]),
+                
+                //Para os controllers é possivel passar função 
+                angular.module("moduloExemplo").controller("moduloExemploController",function($scope){
+                    
+                    //O Scope é a ligação do controller com a view
+                    $scope.mensagem = "Olá mundo !!!";
+                
+                });
+            
+        </script>
+        
+        
+    </head>
+    <body ng-controller="moduloExemploController">
+        <!-- Interpolação da expressão-->
+        <h1>{{mensagem}}</h1>
+        <h1 ng-bind="mensagem"></h1>
+    
+    </body>
+</html>

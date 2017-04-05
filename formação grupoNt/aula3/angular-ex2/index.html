@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="moduloPizzaria">
+    <head>
+        
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <title>Hello world</title>
+        <script src="js/angular.min.js"></script>
+        
+        <script>
+            angular.module("moduloPizzaria",[]),
+                angular.module("moduloPizzaria").controller("moduloPizzariaController",function($scope,$http){
+                    
+                    $scope.nomeFantasia = "Pizzaria do Vando";
+                    
+                    /*$scope.listaCliente = [
+                        {nome: "Vando",telefone: "66666666",endereco: "Recanto das Emas"},
+                        {nome: "Vanderlei",telefone: "88666666",endereco: "Taguatinga"}
+                    ];*/
+                
+                    var salvarClientesJSON = function(cliente){
+                         
+                        $http.post('http://nt.thalissonoliveira.com.br/post.php',cliente).then(
+                             
+                            function(data,status){
+                               
+                                listaClientesJSON();
+                            }
+                        )};
+                        
+                    
+                    //traz os dados do JSON
+                    var listaClientesJSON =  function (){
+                        $http.get('http://nt.thalissonoliveira.com.br/post.php').then(
+                            function(data,status){
+
+                                $scope.listaClientes = data.data;
+                            }
+                        )};
+                    listaClientesJSON();
+
+                    $scope.funcAdicionar = function(cliente){
+                        $scope.listaClientes.push(angular.copy(cliente));
+                    }
+                
+                    
+                    //Salvar os dados do JSON
+                    $scope.funcSalvar =  function (cliente){
+                       
+                        salvarClientesJSON(angular.copy(cliente));
+                    };
+                    
+              
+            });
+           
+            
+        </script>
+        
+        
+    </head>
+    <body ng-controller="moduloPizzariaController">
+        <section class="container">
+            <div class="row">
+                <h1>{{ nomeFantasia }}</h1>
+            </div>
+        
+            <div class="row">
+                <div class="form-inline text-center">
+                    <input type="text" ng-model="pesquisar" placeholder="Buscar">
+                </div>
+            </div>
+            
+            <form name="formCliente">
+                <div>
+                    <input type="text" ng-model="cliente.nome" name="nomeCliente" class="form-control" placeholder="Nome" />
+                </div>
+                
+                <div>
+                    <input type="text" ng-model="cliente.telefone" name="telefoneCliente" class="form-control" placeholder="telefone" />
+                </div>
+                
+                <div>
+                    <input type="text" ng-model="cliente.endereco" name="enderecoCliente" class="form-control" placeholder="endereco" />
+                </div>
+                
+                <div class="form-group">
+                    <button class="btn btn-success" ng-click="funcAdicionar(cliente)">Adicionar</button>
+                    <button class="btn btn-info" ng-click="funcSalvar(cliente)">Salvar</button>
+                </div>
+                
+                <div class="row">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Telefone</th>
+                                <th>Endereço</th>
+                                <th>Ação</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                            <tr ng-repeat="cliente in listaClientes | filter:pesquisar | orderBy: 'nome': true">
+                        
+                                <td>{{cliente.nome}}</td>
+                                <td>{{cliente.telefone}}</td>
+                                <td>{{cliente.endereco}}</td>
+                                <td>
+                                    <button class="btn btn-success">Adicionar</button>
+                                    <button class="btn btn-danger">Excluir</button>
+                                </td>
+                            
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+                
+                
+                
+                
+            </form>
+            
+            
+        </section>
+    </body>
+</html>
